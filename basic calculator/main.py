@@ -28,5 +28,7 @@ if __name__=="__main__":
         elif order=="4":
             nums=order_input()
             print(sub(nums[0],nums[1]))
+        else:
+            print("Enter valid input!")
 
 
