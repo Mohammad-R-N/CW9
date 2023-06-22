@@ -32,3 +32,7 @@ From customer
 INNER JOIN rental ON rental.customer_id = customer.customer_id
 INNER JOIN inventory ON inventory.inventory_id=rental.inventory_id
 INNER JOIN film ON film.film_id= inventory.inventory_id;
+
+--part #7
+select * from film
+where film.length > (select avg(length) from film);
