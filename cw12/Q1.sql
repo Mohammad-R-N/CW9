@@ -36,3 +36,10 @@ INNER JOIN film ON film.film_id= inventory.inventory_id;
 --part #7
 select * from film
 where film.length > (select avg(length) from film);
+
+--part #8
+SELECT film.film_id,film.title,rental.return_date
+From film
+INNER JOIN inventory ON inventory.film_id=film.film_id
+INNER JOIN rental ON rental.inventory_id=inventory.inventory_id
+WHERE return_date>'2005-05-29' AND return_date <'2005-05-30'
