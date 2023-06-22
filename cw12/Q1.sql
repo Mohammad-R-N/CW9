@@ -25,3 +25,10 @@ HAVING count(*) >60 AND count(*)<68;
 SELECT language.name language,film.title,category.name category
 From film INNER JOIN language ON language.language_id=film.language_id
 INNER  JOIN film_category ON film_category.film_id = film.film_id;
+
+--part #6
+SELECT customer.film_name,customer.last_name, file.title,AGE(return_date,rental_date) as rental_duration
+From customer
+INNER JOIN rental ON rental.customer_id = customer.customer_id
+INNER JOIN inventory ON inventory.inventory_id=rental.inventory_id
+INNER JOIN film ON film.film_id= inventory.inventory_id;
