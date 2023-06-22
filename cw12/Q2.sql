@@ -36,3 +36,9 @@ CREATE TABLE StudentRegistration(
        course_id INT NOT NULL UNIQUE,
        FOREIGN KEY (student_id) REFERENCES students(student_id),
        FOREIGN KEY (course_id) REFERENCES courses(course_id));
+
+INSERT INTO students (student_id,student_name,date_of_birth,is_deleted)
+VALUES (1, 'Farzam', '1992-08-14', false),
+        (2,'Mohammad','1999-07-30',false),
+        (3, 'Hossein','2001-04-16',false),
+        (4,'Mehdi','1997-10-15',false);
