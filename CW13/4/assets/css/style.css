@@ -1,0 +1,20 @@
+.links a:link{
+    text-decoration: none;
+    color:black;   
+}
+
+.links a:hover{
+    color: blue;
+}
+
+#google:active{
+    color:red ;
+}
+
+#wikipedia:active{
+    color:yellow ;
+}
+
+#wikipedia,#google:visited{
+    color: green;
+}
