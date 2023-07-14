@@ -1,11 +1,8 @@
 from django.db import models
-from dataclasses import dataclass
 
-
-@dataclass
 class Author(models.Model):
-    name=models.CharField(max_length=50)
-    bio=models.TextField()
-
+    name=models.CharField(max_length=50,null=True)
+    bio=models.TextField(null=True)
+    
     def __str__(self) -> str:
         return self.name

@@ -6,4 +6,4 @@ from .models import Category
 class BlogCategoryView(ListView):
 
     model=Category
-    template_name='index.html'
+    template_name='category.html'

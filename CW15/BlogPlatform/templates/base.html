@@ -14,33 +14,25 @@
 </head>
 
 <body>
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container px-5">
-            <a class="navbar-brand" href="#!">POST.COM</a>
+            <a class="navbar-brand" href="{%url 'home'%}">POST.COM</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarcontent"
                 aria-controls="navbarcontent" aria-expanded="false" aria-label="Toggle navigation"><span
                     class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="navbarcontent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Author</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#!">Post</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#!">Category</a></li>
+                    <li class="nav-item"><a class="nav-link active" aria-current="page"
+                            href="http://localhost:9000/Author/">Author</a></li>
+                    <li class="nav-item"><a class="nav-link" href="http://localhost:9000/Category/">Category</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <div class="mycontiner">
-        <header class="myheader">
-            <div class="myleft"></div>
-            <div class="myright">
-                <h2 class="mywelcome h1 text-white">welcome</h2>
-                <p class="mypara text-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque numquam
-                    labore fugiat
-                    magni quis atque amet totam sed perspiciatis explicabo deserunt, reprehenderit assumenda libero
-                    error tempore laborum? Porro, vero hic?</p>
-                <button class="mybtn">get started</button>
-            </div>
-        </header>
+        {%block navcont %}
+        {% endblock %}
     </div>
 
 </body>
