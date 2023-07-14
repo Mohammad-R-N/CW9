@@ -10,13 +10,6 @@ class Post(models.Model):
 
     def __str__(self) -> str:
         return self.title
-    
-@dataclass
-class Category(models.Model):
-    name=models.CharField(max_length=50)
-    description=models.TextField()
-    def __str__(self) -> str:
-        return self.name
 
 @dataclass
 class Comment(models.Model):

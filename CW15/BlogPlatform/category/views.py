@@ -1,9 +1,9 @@
 from django.shortcuts import render
 from django.views.generic import ListView
-from .models import Author
+from .models import Category
 
 
-class BlogAuthorView(ListView):
+class BlogCategoryView(ListView):
 
-    model=Author
+    model=Category
     template_name='index.html'
