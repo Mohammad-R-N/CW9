@@ -8,6 +8,8 @@ class BlogCommentView(ListView):
     model=Comment
     template_name='comment.html'
 
+
 class BlogPostView(ListView):
+
     model=Post
     template_name='post.html'
