@@ -5,7 +5,7 @@
 }
 
 .mycontiner {
-    background-color: chartreuse;
+    background-color: rgb(255, 255, 255);
     height: 90vh;
     /*? what is vh?*/
 }
@@ -20,7 +20,7 @@
 .myleft {
 
     grid-column: 1/4;
-    background-image: url("../img/header.jpg");
+    background-image: url("../../img/header.jpg");
     background-position: center;
     background-size: cover;
 }
